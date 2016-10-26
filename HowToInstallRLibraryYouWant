@@ -1,0 +1,5 @@
+1) Create a new Terminal
+2) Type command:
+R
+3) Now you are in R script file and you can just install packages just like in R. For example:
+install.packages("ggplot2", dependencies=TRUE)
