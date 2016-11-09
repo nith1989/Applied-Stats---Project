@@ -28,3 +28,4 @@
 ### QUestion 2.1: linear trend model
 ### Question 2.2: Dummy variables to see the financial crisis effect (before & after)
 
+# This is edit from Ying
