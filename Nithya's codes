@@ -1,0 +1,21 @@
+#Author: Nithya Mahadevan
+
+#Applied Stats Project
+
+#Data import
+retail<-read.table('C:/Nithya Mahadevan/Studies/Semester - I/Applied Statistics/Project/Data/Input/train.txt',header=T,sep='\t')
+attach(retail)
+
+#Input QC 
+#Unique values of all columns
+lapply(retail, function(x)length(unique(x)))
+
+
+#Sample plots of output sale price versus some obvious inputs
+pairs(SalePrice~LotArea+KitchenAbvGr+BedroomAbvGr+FullBath+GrLivArea+YearBuilt_Dummy+YearRemodd_Dummy, data=retail, main='Simple Scatterplot Matrix')
+pairs(SalePrice~LotArea+KitchenAbvGr+BedroomAbvGr+YearBuilt_Dummy+YearRemodd_Dummy+OverallCond+OverallQual, data=retail, main='Simple Scatterplot Matrix')
+pairs(SalePrice~LotArea+BedroomAbvGr+LotShape_Dummy+YearBuilt_Dummy+YearRemodd_Dummy+OverallQual, data=retail, main='Simple Scatterplot Matrix')
+
+
+
+
